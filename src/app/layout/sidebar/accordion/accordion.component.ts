@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-accordion',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccordionComponent implements OnInit {
 
+  @Input() activeIds: any;
+  @Input() closeOther: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.activeIds);
+    $('#' + this.activeIds).collapse('toggle');
   }
 
 }
