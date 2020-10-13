@@ -70,4 +70,18 @@
 
 .nav__menu {
   display: flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  width: 100px;
+  padding: 3%;
+  height: 100%;
+  display: flex;
+  color: #b5bac0;
+  justify-content: space-between;
+}
+
+.nav__item span {
+  font-size: 15px;
 }
