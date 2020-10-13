@@ -10,6 +10,9 @@ import { TasksComponent } from './layout/main-outlet/tasks/tasks.component';
 
 
 const routes: Routes = [
+  {
+    path: '', redirectTo: '/workspace', pathMatch: 'full'
+  },
   { path: '', component: LayoutComponent,
   children: [
       {
