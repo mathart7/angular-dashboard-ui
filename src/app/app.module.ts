@@ -14,6 +14,7 @@ import { BookComponent } from './layout/main-outlet/book/book.component';
 import { ActivityComponent } from './layout/main-outlet/activity/activity.component';
 import { TeamComponent } from './layout/main-outlet/team/team.component';
 import { SettingsComponent } from './layout/main-outlet/settings/settings.component';
+import { TasksComponent } from './layout/main-outlet/tasks/tasks.component';
 
 
 
@@ -28,7 +29,8 @@ import { SettingsComponent } from './layout/main-outlet/settings/settings.compon
     BookComponent,
     ActivityComponent,
     TeamComponent,
-    SettingsComponent
+    SettingsComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,
