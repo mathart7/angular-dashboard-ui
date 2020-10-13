@@ -115,6 +115,10 @@ a {
   font-size: 2rem;
 }
 
+.pav_box_item {
+  width: 80px;
+}
+
 .pav_box_item a.active-link::before {
   content: '';
   height: 50px;
