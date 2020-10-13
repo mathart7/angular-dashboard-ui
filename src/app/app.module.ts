@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { AccordionComponent } from './layout/sidebar/accordion/accordion.component';
 
 
 
@@ -14,7 +15,8 @@ import { HeaderComponent } from './layout/header/header.component';
     AppComponent,
     LayoutComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
