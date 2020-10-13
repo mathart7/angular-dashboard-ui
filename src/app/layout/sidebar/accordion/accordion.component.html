@@ -1,13 +1,12 @@
 
 <div class="accordion" id="accordionExample">
-
   <div class="dsh-header">
     {{'Navigation'}}
   </div>
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
-        <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#workspaceMenu"
+        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#workspaceMenu"
           aria-expanded="true" aria-controls="workspaceMenu">
           {{'Workspace'}}
           <i class="fal fa-chevron-down float-right mt-1"></i>
@@ -20,26 +19,55 @@
         <div class="drop-links">
           <div class="list-item">
             <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
-              <small>{{'Home'}}</small></a>
+              <small>{{'work one'}}</small></a>
           </div>
           <div class="list-item">
             <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
-              <small>{{'Tasks'}}</small></a>
+              <small>{{'work two'}}</small></a>
           </div>
           <div class="list-item">
             <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
-              <small>{{'Quiz'}}</small></a>
+              <small>{{'work three'}}</small></a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="card">
+    <div class="card-header" id="headtask">
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#TaskMenu"
+          aria-expanded="true" aria-controls="workspaceMenu">
+          {{'Tasks'}}
+          <i class="fal fa-chevron-down float-right mt-1"></i>
+        </button>
+      </h2>
+    </div>
 
+    <div id="TaskMenu" class="collapse" aria-labelledby="headtask" data-parent="#accordionExample">
+      <div class="card-body p-0">
+        <div class="drop-links">
+          <div class="list-item">
+            <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
+              <small>{{'task one'}}</small></a>
+          </div>
+          <div class="list-item">
+            <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
+              <small>{{'task two'}}</small></a>
+          </div>
+          <div class="list-item">
+            <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
+              <small>{{'task three'}}</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="dsh-header">
     {{'Administration'}}
   </div>
   <div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header" id="bookHeading">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#facadeMenu"
           aria-expanded="true" aria-controls="facadeMenu">
@@ -49,12 +77,16 @@
       </h2>
     </div>
 
-    <div id="facadeMenu" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+    <div id="facadeMenu" class="collapse" aria-labelledby="bookHeading" data-parent="#accordionExample">
       <div class="card-body p-0">
         <div class="drop-links">
           <div class="list-item">
             <a [routerLink]="['/dashboard/book']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
-              <small>{{'My Wall'}}</small></a>
+              <small>{{'Book one'}}</small></a>
+          </div>
+          <div class="list-item">
+            <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-smile mr-4"></i>&nbsp;
+              <small>{{'Book two'}}</small></a>
           </div>
         </div>
       </div>
@@ -65,7 +97,7 @@
       <h2 class="mb-0">
         <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
           data-target="#itemsMenu" aria-expanded="false" aria-controls="itemsMenu">
-          {{'Items'}}
+          {{'Activities'}}
           <i class="fal fa-chevron-down float-right mt-1"></i>
         </button>
       </h2>
@@ -74,36 +106,64 @@
       <div class="card-body p-0">
         <div class="drop-links">
           <div class="list-item">
-            <a [routerLink]="['/dashboard/items']" routerLinkActive="item-active"><i
-                class="fal fa-plus-square mr-4"></i>&nbsp; <small>{{'items'}}</small></a>
+            <a [routerLink]="['/dashboard/activity']" routerLinkActive="item-active"><i
+                class="fal fa-plus-square mr-4"></i>&nbsp; <small>{{'activity one'}}</small></a>
           </div>
           <div class="list-item">
-            <a [routerLink]="['/dashboard/posts']" routerLinkActive="item-active"><i class="fal fa-list mr-4"></i>&nbsp;
-              <small>{{'posts'}}</small></a>
+            <a [routerLink]="['']" routerLinkActive="item-active"><i class="fal fa-list mr-4"></i>&nbsp;
+              <small>{{'activity two'}}</small></a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingThree">
+    <div class="card-header" id="teamHeading">
       <h2 class="mb-0">
         <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
-          data-target="#subsMenu" aria-expanded="false" aria-controls="subsMenu">
-          {{'Subscribers'}}
+          data-target="#teamMenu" aria-expanded="false" aria-controls="teamMenu">
+          {{'Our Team'}}
           <i class="fal fa-chevron-down float-right mt-1"></i>
         </button>
       </h2>
     </div>
-    <div id="subsMenu" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+    <div id="teamMenu" class="collapse" aria-labelledby="teamHeading" data-parent="#accordionExample">
       <div class="card-body p-0">
         <div class="drop-links">
           <div class="list-item">
             <a [routerLink]="['/dashboard/subscribers']" routerLinkActive="item-active"><i
-                class="fal fa-list mr-4"></i>&nbsp; <small>{{'Subscribers'}}</small></a>
+                class="fal fa-list mr-4"></i>&nbsp; <small>{{'subscriber list'}}</small></a>
+          </div>
+          <div class="list-item">
+            <a [routerLink]="['/dashboard/subscribers']" routerLinkActive="item-active"><i
+                class="fal fa-list mr-4"></i>&nbsp; <small>{{'teammate'}}</small></a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="contriHeading">
+      <h2 class="mb-0">
+        <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
+          data-target="#contribMenu" aria-expanded="false" aria-controls="contribMenu">
+          {{'Contributors'}}
+          <i class="fal fa-chevron-down float-right mt-1"></i>
+        </button>
+      </h2>
+    </div>
+    <div id="contribMenu" class="collapse" aria-labelledby="contriHeading" data-parent="#accordionExample">
+      <div class="card-body p-0">
+        <div class="drop-links">
+          <div class="list-item">
+            <a [routerLink]="['/dashboard/lists']" routerLinkActive="item-active"><i
+                class="fal fa-list mr-4"></i>&nbsp; <small>{{'All of them'}}</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dsh-header">
+    {{'Preferences'}}
   </div>
 </div>
