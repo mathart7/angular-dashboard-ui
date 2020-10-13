@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import './assets/fontawesome5/css/all.css';
+@import './assets/fontawesome5/css/brands.css';
+@import './assets/fontawesome5/css/solid.css';
+@import './assets/fontawesome5/css/light.css';
+@import './assets/fontawesome5/css/fontawesome.css';
 body {
   margin: 0%;
 }
