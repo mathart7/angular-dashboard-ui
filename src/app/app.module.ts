@@ -1,14 +1,16 @@
+import { LayoutComponent } from './layout/layout.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BaseComponent } from './base/base.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BaseComponent
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
