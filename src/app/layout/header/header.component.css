@@ -67,3 +67,7 @@
   border: 2px solid #3171b7;
   box-shadow: 1px 1px 4px .7px rgba(0, 0, 0, 0.03);
 }
+
+.nav__menu {
+  display: flex;
+}
