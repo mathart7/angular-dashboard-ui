@@ -166,4 +166,29 @@
   <div class="dsh-header">
     {{'Preferences'}}
   </div>
+  <div class="card">
+    <div class="card-header" id="prefHeading">
+      <h2 class="mb-0">
+        <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse"
+          data-target="#prefbMenu" aria-expanded="false" aria-controls="prefbMenu">
+          {{'Settings'}}
+          <i class="fal fa-chevron-down float-right mt-1"></i>
+        </button>
+      </h2>
+    </div>
+    <div id="prefbMenu" class="collapse" aria-labelledby="prefHeading" data-parent="#accordionExample">
+      <div class="card-body p-0">
+        <div class="drop-links">
+          <div class="list-item">
+            <a [routerLink]="['']" routerLinkActive="item-active"><i
+                class="fal fa-list mr-4"></i>&nbsp; <small>{{'Account Setting'}}</small></a>
+          </div>
+          <div class="list-item">
+            <a [routerLink]="['']" routerLinkActive="item-active"><i
+                class="fal fa-list mr-4"></i>&nbsp; <small>{{'Theme Parameter'}}</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
