@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-dashboard-ui"
+    }
+  },
+  "defaultProject": "angular-dashboard-ui",
+  "cli": {
+    "analytics": false
+  }
 }
