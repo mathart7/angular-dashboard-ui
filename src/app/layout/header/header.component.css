@@ -87,6 +87,9 @@
 }
 
 .circle img {
-  width: 100%;
-  height: 100%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3171b7;
+  box-shadow: 1px 1px 4px .7px rgba(0, 0, 0, 0.03);
 }
