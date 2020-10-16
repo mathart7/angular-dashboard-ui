@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
   state = false;
+  search = '';
 
   constructor() { }
 
