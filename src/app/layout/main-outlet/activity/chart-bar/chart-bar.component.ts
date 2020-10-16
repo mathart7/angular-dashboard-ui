@@ -118,7 +118,7 @@ export class ChartBarComponent implements OnInit {
     return { x, y, r };
   }
 
-  public randomizeBull(): void {
+  randomizeBull(): void {
     const numberOfPoints = this.rand(5) + 5;
     this.bubbleChartData[0].data = Array.apply(null, { length: numberOfPoints }).map(r => this.randomPoint(30));
     setTimeout(() => {
@@ -126,7 +126,7 @@ export class ChartBarComponent implements OnInit {
     }, 3000);
   }
 
-  public randomizeBar(): void {
+  randomizeBar(): void {
     this.barChartType = this.barChartType === 'bar' ? 'line' : 'bar';
     setTimeout(() => {
       this.sync = true;
