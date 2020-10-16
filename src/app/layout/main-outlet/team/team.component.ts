@@ -1,5 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
+declare var $: any;
+
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
@@ -161,12 +163,9 @@ export class TeamComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   toBottom() {
-    document.documentElement.scrollTop = 400;
-  }
-
-  @HostListener('window:scroll', [])
-  toTop() {
-    document.documentElement.scrollTop = 0;
+    $("#div1").animate({
+      scrollTop: $('#div1')[0].scrollHeight - $('#div1')[0].clientHeight
+    }, 1000);
   }
 
 
