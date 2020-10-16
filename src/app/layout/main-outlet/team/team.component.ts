@@ -159,14 +159,14 @@ export class TeamComponent implements OnInit {
   }
 
 
-  @HostListener('window:scroll')
+  @HostListener('window:scroll', [])
   toBottom() {
-
+    document.documentElement.scrollTop = 400;
   }
 
-  @HostListener('window:scroll')
+  @HostListener('window:scroll', [])
   toTop() {
-
+    document.documentElement.scrollTop = 0;
   }
 
 

@@ -33,7 +33,8 @@ input:focus {
 
 .r-height {
   height: 370px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .scroll-btn-down {
