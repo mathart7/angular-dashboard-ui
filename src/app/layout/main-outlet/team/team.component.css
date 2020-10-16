@@ -1,5 +1,5 @@
 .c-flex {
-  width: 400px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
 }
@@ -16,11 +16,12 @@
   width: 100%;
   padding-top: .45rem;
   padding-bottom: .45rem;
+  font-size: 12px;
 }
 
 .input-container i {
   position: absolute;
-  top: 35%;
+  top: 30%;
   right: 3%;
   left: auto;
 }
