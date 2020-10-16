@@ -163,8 +163,15 @@ export class TeamComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   toBottom() {
-    $("#div1").animate({
-      scrollTop: $('#div1')[0].scrollHeight - $('#div1')[0].clientHeight
+    $('.r-height').animate({
+      scrollTop: $('.r-height')[0].scrollHeight - $('.r-height')[0].clientHeight
+    }, 1000);
+  }
+
+  @HostListener('window:scroll', [])
+  toTop() {
+    $('.r-height').animate({
+      scrollTop: $('.r-height')[0].scrollHeight - $('.r-height')[0].clientHeight
     }, 1000);
   }
 
