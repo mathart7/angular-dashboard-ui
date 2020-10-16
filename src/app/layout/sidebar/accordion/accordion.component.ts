@@ -17,4 +17,6 @@ export class AccordionComponent implements OnInit {
     $('#' + this.activeIds).collapse('toggle');
   }
 
+
+
 }
