@@ -16,6 +16,7 @@ import { TeamComponent } from './layout/main-outlet/team/team.component';
 import { SettingsComponent } from './layout/main-outlet/settings/settings.component';
 import { TasksComponent } from './layout/main-outlet/tasks/tasks.component';
 import { ChartsModule } from 'ng2-charts';
+import { ChartBarComponent } from './layout/main-outlet/activity/chart-bar/chart-bar.component';
 
 
 
@@ -31,7 +32,8 @@ import { ChartsModule } from 'ng2-charts';
     ActivityComponent,
     TeamComponent,
     SettingsComponent,
-    TasksComponent
+    TasksComponent,
+    ChartBarComponent
   ],
   imports: [
     BrowserModule,
