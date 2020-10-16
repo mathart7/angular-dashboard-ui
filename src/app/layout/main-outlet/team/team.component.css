@@ -35,3 +35,13 @@ input:focus {
   height: 370px;
   overflow: hidden;
 }
+
+.scroll-btn-down {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+}
