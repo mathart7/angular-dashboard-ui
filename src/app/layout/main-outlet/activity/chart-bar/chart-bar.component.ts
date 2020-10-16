@@ -133,6 +133,11 @@ export class ChartBarComponent implements OnInit {
     }, 3000);
   }
 
+  get aSync() {
+    return {
+      'fas fa-sync': true,
 
+    };
+  }
 
 }
