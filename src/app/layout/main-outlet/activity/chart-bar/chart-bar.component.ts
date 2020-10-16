@@ -24,7 +24,7 @@ export class ChartBarComponent implements OnInit {
   ];
 
 
-  // Bull 
+  // Bull part
 
   public bubbleChartOptions: ChartOptions = {
     responsive: true,
