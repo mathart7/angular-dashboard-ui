@@ -110,7 +110,7 @@ a {
 
 
 .pav_box_link > i:hover {
-  transform: translateY(-5px)!important;
+  /* transform: translateY(-5px)!important; */
   display: block;
   font-size: 2rem;
 }

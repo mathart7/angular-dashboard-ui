@@ -34,3 +34,9 @@
 .c__left , .c__right{
   color: #ffff;
 }
+
+
+.icon-state {
+  display: block;
+  font-size: 2rem;
+}
