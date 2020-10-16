@@ -33,4 +33,6 @@ input:focus {
 
 .r-height {
   height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
