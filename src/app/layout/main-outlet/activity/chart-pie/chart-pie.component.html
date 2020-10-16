@@ -10,33 +10,12 @@
   <div class="col-md-6">
     <div style="display: block">
       <canvas baseChart
-      [data]="polarAreaChartData"
-      [labels]="polarAreaChartLabels"
-      [legend]="polarAreaLegend"
-      [chartType]="polarAreaChartType">
+      [datasets]="radarChartData"
+      [options]="radarChartOptions"
+      [labels]="radarChartLabels"
+      [chartType]="radarChartType">
     </canvas>
     </div>
-  </div>
+</div>
 </div>
 
-<div class="row my-3">
-  <div class="col-md-6">
-    <div style="display: block">
-      <canvas baseChart
-              [data]="pieChartData"
-              [labels]="pieChartLabels"
-              [chartType]="pieChartType"></canvas>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-      <div style="display: block">
-        <canvas baseChart
-        [datasets]="radarChartData"
-        [options]="radarChartOptions"
-        [labels]="radarChartLabels"
-        [chartType]="radarChartType">
-      </canvas>
-      </div>
-  </div>
-</div>
