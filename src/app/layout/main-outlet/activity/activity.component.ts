@@ -9,6 +9,7 @@ export class ActivityComponent implements OnInit {
 
   state = false;
 
+
   constructor() { }
 
   ngOnInit(): void {

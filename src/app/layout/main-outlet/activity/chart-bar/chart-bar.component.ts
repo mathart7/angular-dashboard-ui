@@ -83,6 +83,8 @@ export class ChartBarComponent implements OnInit {
     }
   ];
 
+  sync = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -119,10 +121,18 @@ export class ChartBarComponent implements OnInit {
   public randomizeBull(): void {
     const numberOfPoints = this.rand(5) + 5;
     this.bubbleChartData[0].data = Array.apply(null, { length: numberOfPoints }).map(r => this.randomPoint(30));
+    setTimeout(() => {
+      this.sync = true;
+    }, 3000);
   }
 
   public randomizeBar(): void {
     this.barChartType = this.barChartType === 'bar' ? 'line' : 'bar';
+    setTimeout(() => {
+      this.sync = true;
+    }, 3000);
   }
+
+
 
 }
