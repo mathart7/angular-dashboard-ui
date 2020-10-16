@@ -15,12 +15,12 @@
       </div>
 </div>
 
-<div class="row">
+<div class="row my-2">
     <div class="col-md-2" *ngFor="let item of team">
         <div class="card m-2">
           <div class="card-body text-center pt-1">
                 <img [src]="item?.avatar" class="circle" alt="">
-                <div class="my-2 w-100">
+                <div class="my-2">
                     <small class="text-muted">{{item?.name}}</small>
                 </div>
           </div>

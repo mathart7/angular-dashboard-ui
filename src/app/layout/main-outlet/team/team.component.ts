@@ -11,7 +11,7 @@ export class TeamComponent implements OnInit {
 
   team = [
     {
-      name: 'Christian Perkins',
+      name: 'A R kuete',
       avatar: 'https://gravatar.com/avatar/61f49a88d728ed09dc65432a651321bb?s=400&d=robohash&r=x'
     },
     {
@@ -47,11 +47,11 @@ export class TeamComponent implements OnInit {
       avatar: 'https://gravatar.com/avatar/c0193f1f43576b22fcf381200d5a7326?s=400&d=robohash&r=x'
     },
     {
-      name: 'Campos Glover',
+      name: 'Mya Glover',
       avatar: 'https://gravatar.com/avatar/ccc9b063327c684bcd86074d08947e1d?s=400&d=robohash&r=x'
     },
     {
-      name: 'Mcfarland Mcdaniel',
+      name: 'Ori Mcdaniel',
       avatar: 'https://gravatar.com/avatar/32c5c1757ee277f7fe29db194f785f47?s=400&d=robohash&r=x'
     },
     {
@@ -75,7 +75,7 @@ export class TeamComponent implements OnInit {
       avatar: 'https://robohash.org/503a42fc0510d53b7e51b761ae848313?set=set4&bgset=&size=400x400'
     },
     {
-      name: 'Knowles Briggs',
+      name: 'Knowles Huge',
       avatar: 'https://robohash.org/a997b792a97754eaae597547e72787c5?set=set4&bgset=&size=400x400'
     },
     {
@@ -83,11 +83,11 @@ export class TeamComponent implements OnInit {
       avatar: 'https://robohash.org/040c5b6755c1ed4911aaa8f8965fc4f3?set=set4&bgset=&size=400x400'
     },
     {
-      name: 'Christian Vargas',
+      name: 'Christ Vargas',
       avatar: 'https://robohash.org/183e1e3e0e3c1eb368cea926a52fbbdd?set=set4&bgset=&size=400x400'
     },
     {
-      name: 'Chase Chapman',
+      name: 'Chase Luke',
       avatar: 'https://robohash.org/3a4edefbae69a99989da2f756a15500f?set=set4&bgset=&size=400x400'
     },
     {
@@ -111,19 +111,19 @@ export class TeamComponent implements OnInit {
       avatar: 'https://gravatar.com/avatar/e54ce489ae05c77171ccafcca8aa71ce?s=400&d=robohash&r=x'
     },
     {
-      name: 'Rasmussen Shannon',
+      name: 'Ras Shannon',
       avatar: 'https://gravatar.com/avatar/5d4e5b6feb351b8c21eb244d8015ab12?s=400&d=robohash&r=x'
     },
     {
-      name: 'Charlotte Stephens',
+      name: 'Stephens Sy',
       avatar: 'https://gravatar.com/avatar/56a595350ff9e4758f9cf70b20e5adb3?s=400&d=robohash&r=x'
     },
     {
-      name: 'Rosemary Benson',
+      name: 'Rosemary Abla',
       avatar: 'https://gravatar.com/avatar/8e66c2d0e6d302698bc309690eed5c1a?s=400&d=robohash&r=x'
     },
     {
-      name: 'David Johnston',
+      name: 'David John',
       avatar: 'https://robohash.org/b3be078473cf631cb75496596fb005a4?set=set4&bgset=&size=400x400'
     },
     {
