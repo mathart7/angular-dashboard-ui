@@ -17,6 +17,7 @@ import { SettingsComponent } from './layout/main-outlet/settings/settings.compon
 import { TasksComponent } from './layout/main-outlet/tasks/tasks.component';
 import { ChartsModule } from 'ng2-charts';
 import { ChartBarComponent } from './layout/main-outlet/activity/chart-bar/chart-bar.component';
+import { ChartPieComponent } from './layout/main-outlet/activity/chart-pie/chart-pie.component';
 
 
 
@@ -33,7 +34,8 @@ import { ChartBarComponent } from './layout/main-outlet/activity/chart-bar/chart
     TeamComponent,
     SettingsComponent,
     TasksComponent,
-    ChartBarComponent
+    ChartBarComponent,
+    ChartPieComponent
   ],
   imports: [
     BrowserModule,
