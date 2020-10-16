@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ChartType } from 'chart.js';
+import { Label, SingleDataSet } from 'ng2-charts';
 
 @Component({
   selector: 'app-chart-pie',
@@ -25,6 +27,13 @@ export class ChartPieComponent implements OnInit {
   public pieChartLabels = ['Sales Q1', 'Sales Q2', 'Sales Q3', 'Sales Q4'];
   public pieChartData = [120, 150, 180, 90];
   public pieChartType = 'pie';
+
+
+  // Polar
+  public polarAreaChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales'];
+  public polarAreaChartData: SingleDataSet = [300, 500, 100, 40, 120];
+  public polarAreaLegend = true;
+  public polarAreaChartType: ChartType = 'polarArea';
 
   constructor() { }
 
