@@ -158,4 +158,7 @@ export class TeamComponent implements OnInit {
     this.state = !this.state;
   }
 
+
+
+
 }
