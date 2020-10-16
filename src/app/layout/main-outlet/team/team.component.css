@@ -5,13 +5,22 @@
 
 .input-container input {
   padding-left: 6%;
-  padding-right: 12%;
+  padding-right: 13%;
   border-radius: 1rem;
   border: 1px solid #ced4da;
   width: 100%;
+  padding-top: .45rem;
+  padding-bottom: .45rem;
 }
 
-input:focus{
+.input-container i {
+  position: absolute;
+  top: 35%;
+  right: 3%;
+  left: auto;
+}
+
+input:focus {
   box-shadow: none;
   outline: none;
 }
