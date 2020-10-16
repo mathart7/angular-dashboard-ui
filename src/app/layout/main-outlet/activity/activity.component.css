@@ -15,3 +15,8 @@
 .card-three {
   background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
 }
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+}
