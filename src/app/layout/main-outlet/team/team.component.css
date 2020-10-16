@@ -2,3 +2,16 @@
   display: flex;
   justify-content: space-between;
 }
+
+.input-container input {
+  padding-left: 6%;
+  padding-right: 12%;
+  border-radius: 1rem;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+input:focus{
+  box-shadow: none;
+  outline: none;
+}
