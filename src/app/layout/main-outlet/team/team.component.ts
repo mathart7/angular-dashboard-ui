@@ -162,14 +162,6 @@ export class TeamComponent implements OnInit {
     this.state = !this.state;
   }
 
-
-  @HostListener('window:scroll', [])
-  toBottom() {
-    $('.r-height').animate({
-      scrollTop: $('.r-height')[0].scrollHeight - $('.r-height')[0].clientHeight
-    }, 1000);
-  }
-
   @HostListener('window:scroll', [])
   scroll() {
     this.statement = !this.statement;
@@ -189,5 +181,14 @@ export class TeamComponent implements OnInit {
 
   }
 
+
+  get icoChevron() {
+    return {
+      fal: true,
+      'fa-chevron-circle-down': this.statement === false,
+      'fa-chevron-circle-up': this.statement === true,
+      'fa-2x': true
+    };
+  }
 
 }
