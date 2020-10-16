@@ -142,6 +142,8 @@ export class TeamComponent implements OnInit {
     }
   ];
 
+  statement = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -169,10 +171,22 @@ export class TeamComponent implements OnInit {
   }
 
   @HostListener('window:scroll', [])
-  toTop() {
-    $('.r-height').animate({
-      scrollTop: $('.r-height')[0].scrollHeight - $('.r-height')[0].clientHeight
-    }, 1000);
+  scroll() {
+    this.statement = !this.statement;
+
+    if (this.statement === true) {
+      $('.r-height').animate({
+        scrollTop: $('.r-height')[0].scrollHeight - $('.r-height')[0].clientHeight
+      }, 1000);
+    }
+
+    if (this.statement === false) {
+      $('.r-height').animate({
+        scrollTop: $('.r-height')[0].scrollTop(0)
+      }, 1000);
+    }
+
+
   }
 
 
