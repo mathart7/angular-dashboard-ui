@@ -57,5 +57,10 @@
         </div>
       </div>
     </div>
+
+    <div class="chart-state__container">
+        <div *ngIf="state === true" class="pie__state"></div>
+        <div *ngIf="state === false" class="bar__state"></div>
+    </div>
   </div>
 </div>
