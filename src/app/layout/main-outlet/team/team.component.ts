@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
+  state = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  get iconState() {
+    return {
+      fal: true,
+      'fa-th': this.state === true,
+      'fa-list': this.state === false
+    };
+  }
+
+  switchIcon() {
+    this.state = !this.state;
   }
 
 }
