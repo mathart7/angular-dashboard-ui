@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-6 text-center">
     <div style="display: block">
       <canvas baseChart
         [datasets]="bubbleChartData"
@@ -10,16 +10,16 @@
       </canvas>
     </div>
     <button class="btn" (click)="randomizeBull()">
-      <i class="fas fa-sync"></i>&nbsp;{{'Update'}}
+      <i class="fas fa-sync"></i>&nbsp;{{'Random'}}
     </button>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6 text-center">
       <div style="display: block;">
         <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
         [legend]="barChartLegend" [chartType]="barChartType"
         ></canvas>
       </div>
-      <button class="btn btn-primary"  (click)="randomizeBar()">{{'Random'}}</button>
+      <button class="btn"  (click)="randomizeBar()"><i class="fas fa-sync"></i>&nbsp;{{'Random'}}</button>
   </div>
 </div>
 
