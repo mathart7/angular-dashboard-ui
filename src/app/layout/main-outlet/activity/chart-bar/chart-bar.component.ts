@@ -121,22 +121,21 @@ export class ChartBarComponent implements OnInit {
   randomizeBull(): void {
     const numberOfPoints = this.rand(5) + 5;
     this.bubbleChartData[0].data = Array.apply(null, { length: numberOfPoints }).map(r => this.randomPoint(30));
-    setTimeout(() => {
-      this.sync = true;
-    }, 3000);
   }
 
   randomizeBar(): void {
+    this.sync = true;
     this.barChartType = this.barChartType === 'bar' ? 'line' : 'bar';
     setTimeout(() => {
-      this.sync = true;
-    }, 3000);
+      this.sync = false;
+    }, 5000);
   }
 
   get aSync() {
+    console.log(this.sync);
     return {
       'fas fa-sync': true,
-      'fa-spin': this.sync === true
+      'fa-spin': this.sync ? true : false
     };
   }
 
