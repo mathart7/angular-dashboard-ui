@@ -39,10 +39,10 @@ export class LayoutComponent implements OnInit {
 
   side: boolean;
 
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   preparedRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
@@ -51,5 +51,7 @@ export class LayoutComponent implements OnInit {
   getSide(event: any) {
       this.side = event;
   }
+
+
 
 }
