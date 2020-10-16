@@ -1,6 +1,11 @@
 .c-flex {
+  width: 400px;
   display: flex;
   justify-content: space-between;
+}
+
+.input-container {
+  position: relative;
 }
 
 .input-container input {
