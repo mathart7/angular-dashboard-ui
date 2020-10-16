@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivityComponent implements OnInit {
 
-  state = false;
+  state = true;
 
   constructor() { }
 
@@ -20,6 +20,21 @@ export class ActivityComponent implements OnInit {
 
   off() {
     this.state = false;
+  }
+
+  get pie() {
+    return {
+      'fal fa-chart-pie': true,
+      'icon-state': this.state === true
+    };
+  }
+
+
+  get bar() {
+    return {
+      'fal fa-chart-bar': true,
+      'icon-state': this.state === false
+    };
   }
 
 }

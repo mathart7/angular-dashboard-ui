@@ -39,4 +39,5 @@
 .icon-state {
   display: block;
   font-size: 2rem;
+  transition: all .4s ease-in-out;
 }
