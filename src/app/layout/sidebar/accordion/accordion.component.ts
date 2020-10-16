@@ -14,7 +14,6 @@ export class AccordionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.activeIds);
     $('#' + this.activeIds).collapse('toggle');
   }
 
