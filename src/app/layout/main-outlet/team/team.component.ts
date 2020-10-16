@@ -182,7 +182,7 @@ export class TeamComponent implements OnInit {
 
     if (this.statement === false) {
       $('.r-height').animate({
-        scrollTop: $('.r-height')[0].scrollTop(0)
+        scrollTop: 0
       }, 1000);
     }
 
