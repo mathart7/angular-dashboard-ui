@@ -4,6 +4,14 @@
   transition: all .2s;
 }
 
-.first {
+.card-first {
   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
+}
+
+.card-second {
+  background-image: radial-gradient(circle 248px at center, #a54a2e 0%, #af4429 47%, #bb3b14 100%) !important;
+}
+
+.card-three {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
 }
