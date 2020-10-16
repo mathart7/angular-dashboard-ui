@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivityComponent implements OnInit {
 
+  state = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  on() {
+    this.state = true;
+  }
+
+  off() {
+    this.state = false;
   }
 
 }
