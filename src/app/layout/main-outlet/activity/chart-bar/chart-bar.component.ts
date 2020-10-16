@@ -136,7 +136,7 @@ export class ChartBarComponent implements OnInit {
   get aSync() {
     return {
       'fas fa-sync': true,
-
+      'fa-spin': this.sync === true
     };
   }
 
