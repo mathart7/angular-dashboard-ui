@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="row my-3">
       <div class="col-md-12">
         <div class="float-right">
           <button class="btn" (click)="on()">
@@ -59,8 +59,12 @@
     </div>
 
     <div class="chart-state__container">
-        <div *ngIf="state === true" class="pie__state"></div>
-        <div *ngIf="state === false" class="bar__state"></div>
+        <div *ngIf="state === true" class="pie__state puff-in-center">
+
+        </div>
+        <div *ngIf="state === false" class="bar__state puff-in-center">
+
+        </div>
     </div>
   </div>
 </div>
