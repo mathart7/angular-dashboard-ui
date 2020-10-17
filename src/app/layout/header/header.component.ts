@@ -8,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  background = '';
+
   constructor(private service: DashService) { }
 
   ngOnInit(): void {
     this.service.getNavColor().subscribe(
       (_) => {
         console.log(_);
+        this.background = _;
       }
     );
   }
