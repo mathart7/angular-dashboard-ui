@@ -15,7 +15,7 @@ export class SettingsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.navbg.emit(this.selection.nativeElement.value);
+
   }
 
 
