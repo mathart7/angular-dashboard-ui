@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-settings',
@@ -9,14 +9,16 @@ export class SettingsComponent implements OnInit {
 
   @Output() navbg = new EventEmitter();
 
-  select = '';
+  @ViewChild('selection') selection: ElementRef;
 
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.select);
+    this.navbg.emit(this.selection.nativeElement.value);
   }
+
+
 
 
 
