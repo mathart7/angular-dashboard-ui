@@ -1,3 +1,4 @@
+import { DashService } from './../../dash.service';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -9,10 +10,10 @@ export class SettingsComponent implements OnInit {
 
   @ViewChild('selection') selection: ElementRef;
 
-  constructor() { }
+  constructor(private service: DashService) { }
 
   ngOnInit(): void {
-
+      this.service.setNav(this.selection.nativeElement.value);
   }
 
 
