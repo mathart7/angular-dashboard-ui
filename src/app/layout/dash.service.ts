@@ -10,7 +10,6 @@ export class DashService {
 
   constructor() { }
 
-
   setNav(color: string) {
     this.subject.next(color);
   }
