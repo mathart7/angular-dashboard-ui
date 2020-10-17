@@ -8,14 +8,16 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
-  @ViewChild('selection') selection: ElementRef;
 
   constructor(private service: DashService) { }
 
   ngOnInit(): void {
-      this.service.setNav(this.selection.nativeElement.value);
+
   }
 
+  setNavBg(value: any) {
+      this.service.setNav(value);
+  }
 
 
 

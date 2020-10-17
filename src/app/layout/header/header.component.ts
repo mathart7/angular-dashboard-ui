@@ -1,3 +1,4 @@
+import { DashService } from './../dash.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: DashService) { }
 
   ngOnInit(): void {
+    this.service.getNavColor().subscribe(
+      (_) => {
+        console.log(_);
+      }
+    );
   }
 
 }
