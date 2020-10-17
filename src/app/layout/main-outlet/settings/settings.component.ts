@@ -9,13 +9,13 @@ export class SettingsComponent implements OnInit {
 
   @Output() navbg = new EventEmitter();
 
-  @ViewChild('selection') selection: ElementRef;
+  select = '';
 
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.selection.nativeElement.value);
+    console.log(this.select);
   }
 
 
