@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
 
+  users = [
+
+  ];
+
+  teams = [
+
+  ];
+
+  tasks = [
+
+  ];
+
+
+
   constructor() { }
 
   ngOnInit(): void {
