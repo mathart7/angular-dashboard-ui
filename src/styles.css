@@ -51,3 +51,8 @@ i {
 .bx-s {
   box-shadow: 1px 1px 4px .7px rgba(0, 0, 0, 0.03);
 }
+
+.no-border {
+  border: none!important;
+}
+
