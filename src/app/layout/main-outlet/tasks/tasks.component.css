@@ -82,3 +82,14 @@ input[type=text]:focus {
   font-size: 24px;
   color: rgb(141, 136, 136);
 }
+
+.shape-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #008080;
+}
+
+.mg {
+  margin-top: .35rem!important;
+}
