@@ -1,12 +1,12 @@
-/* .card::before {
+.card-state::before {
   content: '';
   height: 100%;
-  width: 3px;
+  width: 6px;
   background-color: #3171b7;
   position: absolute;
   border-top-left-radius: .25rem;
   border-bottom-left-radius: .25rem;
-} */
+}
 
 .card-color {
   background-color: rgb(223, 219, 219);
