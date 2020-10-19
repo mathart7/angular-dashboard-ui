@@ -64,3 +64,11 @@ input[type=text] {
 input[type=text]:focus {
   width: 100%;
 }
+
+.fa-file-alt {
+  color: rgb(102, 99, 99);
+}
+
+.fa-pen-alt {
+  color: #3171b7;
+}
