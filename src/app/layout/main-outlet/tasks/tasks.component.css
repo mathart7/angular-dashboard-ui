@@ -12,16 +12,30 @@
   background-color: rgb(223, 219, 219);
 }
 
+.flexible {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left {
+  margin-left: 15px;
+}
+
 .right {
-  float: right;
   display: flex;
   justify-content: space-between;
   width: 70px;
+  margin-top: 7px;
 }
 
 .card-h {
   height: 520px;
   background-color: #ffff;
+}
+
+.title-color {
+  color: rgb(102, 99, 99);
 }
 
 .search-container {
@@ -32,12 +46,13 @@
   position: absolute;
   top: 34%;
   left: 5%;
+  color: #ccc;
 }
 
 input[type=text] {
   width: 30px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
