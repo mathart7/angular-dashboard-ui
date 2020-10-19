@@ -13,9 +13,9 @@
 }
 
 .flexible {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .left {
@@ -42,6 +42,7 @@
   position: relative;
   width: 100%;
 }
+
 .search-container i {
   position: absolute;
   top: 34%;
@@ -91,7 +92,7 @@ input[type=text]:focus {
 }
 
 .mg {
-  margin-top: .35rem!important;
+  margin-top: .35rem !important;
 }
 
 .contain {
@@ -100,7 +101,23 @@ input[type=text]:focus {
 }
 
 .shape {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
+  border: 3px solid #3171b7;
+}
+
+.user-informations {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #e9ecef;
+  border-radius: .25rem;
 }
