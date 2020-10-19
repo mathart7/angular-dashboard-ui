@@ -93,3 +93,9 @@ input[type=text]:focus {
 .mg {
   margin-top: .35rem!important;
 }
+
+.shape {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
