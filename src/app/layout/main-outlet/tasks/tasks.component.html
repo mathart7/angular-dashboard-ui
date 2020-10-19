@@ -53,9 +53,9 @@
               <div class="detail-part">
                 <div id="accordion">
                   <div class="card">
-                    <div class="card-header p-0" id="headingOne">
+                    <div class="card-header no-bb p-0" id="headingOne">
                       <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                        <button class="btn" data-toggle="collapse" data-target="#collapseOne"
                           aria-expanded="true" aria-controls="collapseOne">
                           {{'Tasks Progress'}}
                         </button>
@@ -77,8 +77,8 @@
                 </div>
               </div>
               <div class="user-part mt-2">
-                <div class="card no-border bx-s">
-                  <div class="contain">
+                <div class="card no-border shadow">
+                  <div class="contain px-2">
                     <div class="user-informations">
                       <img src="https://gravatar.com/avatar/59546b956cd1fcc1e55cb891e3cd3775?s=400&d=robohash&r=x"
                         class="shape" alt="">
@@ -87,12 +87,17 @@
                         <small>{{'Web Developer'}}</small>
                       </div>
                     </div>
-                    <div class="user-progress">
-                          <div class="progress"></div>
+                    <div class="user-progress mt-2">
+                          <div class="progress">
+                                <div class="progress-bar bg-success"></div>
+                          </div>
+                          <small>{{'In Progress 54% '}}</small>
                     </div>
 
-                    <div class="actions">
-
+                    <div class="actions mt-3">
+                        <i class="fal fa-power-off"></i>
+                        <i class="fal fa-sync-alt"></i>
+                        <i class="fal fa-file-alt"></i>
                     </div>
 
                   </div>
