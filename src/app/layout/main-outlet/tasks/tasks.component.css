@@ -11,3 +11,10 @@
 .card-color {
   background-color: rgb(223, 219, 219);
 }
+
+.right {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
