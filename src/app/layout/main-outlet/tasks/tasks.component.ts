@@ -75,6 +75,7 @@ export class TasksComponent implements OnInit {
   taskTitle = '#Task_number_1';
 
   taskForm: FormGroup;
+  spin = false;
 
 
   constructor() { }
@@ -100,7 +101,12 @@ export class TasksComponent implements OnInit {
   }
 
   add() {
-
+    const form = this.taskForm.value;
+    this.spin = true;
+    setTimeout(() => {
+      this.spin = false;
+      this.tasks.push({title: form.title, description: form.description});
+    }, 3000);
   }
 
 }

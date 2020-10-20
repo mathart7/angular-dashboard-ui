@@ -21,7 +21,7 @@
 
         <div class="row my-2 collapse" id="addTask" aria-labelledby="heading">
           <div class="col-md-12 text-center">
-            <form >
+            <form [formGroup]="taskForm">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="inputGroup-sizing-default">{{'Title'}}</span>
@@ -37,8 +37,8 @@
               </div>
 
               <div class="text-center my-2">
-                  <button class="btn btn-pry">
-                    <i class="fas fa-spinner fa-spin"></i>
+                  <button class="btn btn-pry" [disabled]="taskForm.invalid" (click)="add()">
+                    <i *ngIf="spin === true" class="fas fa-spinner fa-spin"></i>
                     {{'Save'}}</button>
               </div>
 
