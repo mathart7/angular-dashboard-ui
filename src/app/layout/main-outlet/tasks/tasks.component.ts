@@ -81,9 +81,15 @@ export class TasksComponent implements OnInit {
   ];
 
   tasks = [
-
+      { title: '#Task_number_1' , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a neque at lorem convallis pharetra.'},
+      { title: '#Task_number_2' , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a neque at lorem convallis pharetra.'},
+      { title: '#Task_number_3' , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a neque at lorem convallis pharetra.'},
+      { title: '#Task_number_4' , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a neque at lorem convallis pharetra.'},
+      { title: '#Task_number_5' , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a neque at lorem convallis pharetra.'},
+      { title: '#Task_number_6' , description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a neque at lorem convallis pharetra.'},
   ];
 
+  selectedIndex = 0;
 
 
   constructor() { }

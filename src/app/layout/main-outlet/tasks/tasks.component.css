@@ -1,4 +1,4 @@
-.card-state::before {
+.card-active::before {
   content: '';
   height: 100%;
   width: 6px;
@@ -192,4 +192,13 @@
 .flex-c {
   display: flex;
   justify-content: space-between;
+}
+
+
+.card-header .fal {
+  transition: .3s transform ease-in-out;
+}
+
+.card-header .collapsed i {
+  transform: rotate(-180deg);
 }

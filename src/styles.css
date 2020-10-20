@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .bold {
   font-weight: bold;
 }

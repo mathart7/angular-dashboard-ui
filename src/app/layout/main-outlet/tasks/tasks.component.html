@@ -48,8 +48,8 @@
 
         <div class="row my-2">
           <div class="col-md-12">
-            <perfect-scrollbar style="width: 100%;  height: 243px; padding-right: 10px;">
-              <div class="card card-state">
+            <perfect-scrollbar style="width: 100%;  height: 255px; padding-right: 10px;">
+              <div class="card mb-2 cursor" [class.card-active]="selectedIndex === i" *ngFor="let item of tasks; let i = index" (click)="selectedIndex = i">
                 <div class="card-body p-2 flexible">
                   <div class="left">
                     <small class="title-color">{{'Tasks charge for web apps tests'}}</small>
@@ -91,7 +91,8 @@
                         {{'Tasks Progress'}}
                       </button>
                     </h5>
-                    <button class="btn">
+                    <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
                         <i class="fal fa-chevron-circle-down"></i>
                     </button>
                   </div>
