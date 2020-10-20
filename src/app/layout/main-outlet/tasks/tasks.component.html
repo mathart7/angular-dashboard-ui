@@ -122,21 +122,21 @@
               </div>
             </div>
             <div class="user-part mt-2">
-              <div class="card no-border shadow">
+              <div class="card no-border shadow mb-2" *ngFor="let item of users">
                 <div class="contain px-2">
                   <div class="user-informations">
-                    <img src="https://gravatar.com/avatar/59546b956cd1fcc1e55cb891e3cd3775?s=400&d=robohash&r=x"
+                    <img [src]="item?.avatar"
                       class="shape" alt="">
                     <div>
-                      <small><b>{{'John Doe'}}</b></small><br>
-                      <small>{{'Web Developer'}}</small>
+                      <small><b>{{item?.name}}</b></small><br>
+                      <small>{{item?.grade}}</small>
                     </div>
                   </div>
                   <div class="user-progress mt-2">
                     <div class="progress">
                       <div class="progress-bar bg-success"></div>
                     </div>
-                    <small>{{'In Progress 54%'}}</small>
+                    <small>{{'In Progress ' + item?.progression + '%'}}</small>
                   </div>
 
                   <div class="actions mt-3">
