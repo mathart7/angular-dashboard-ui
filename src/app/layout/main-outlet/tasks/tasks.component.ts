@@ -41,31 +41,36 @@ export class TasksComponent implements OnInit {
       name: 'A R kuete',
       avatar: 'https://gravatar.com/avatar/61f49a88d728ed09dc65432a651321bb?s=400&d=robohash&r=x',
       grade: 'Chef de Projet',
-      progression: 54
+      progression: 54,
+      color: '#3171b7'
     },
     {
       name: 'Arline Baker',
       avatar: 'https://gravatar.com/avatar/8c548df7644340531484f663b239e7a8?s=400&d=robohash&r=x',
       grade: 'Vice chef',
-      progression: 70
+      progression: 70,
+      color: 'green'
     },
     {
       name: 'Poole Walters',
       avatar: 'https://gravatar.com/avatar/a02302b277f6aebff4402f9a3e838c5e?s=400&d=robohash&r=x',
       grade: 'UI/UX Designer',
-      progression: 45
+      progression: 45,
+      color: 'orange'
     },
     {
       name: 'Myrtle Mcintyre',
       avatar: 'https://gravatar.com/avatar/8f10e68333363f8c70afdf8d100547a1?s=400&d=robohash&r=x',
       grade: 'Codeur',
-      progression: 10
+      progression: 10,
+      color: 'red'
     },
     {
       name: 'Josie Mullen',
       avatar: 'https://gravatar.com/avatar/a5b8a25ece063e93b1e0f1ce6db75094?s=400&d=robohash&r=x',
       grade: 'Codeur',
-      progression: 100
+      progression: 100,
+      color: 'green'
     }
   ];
 
