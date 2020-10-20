@@ -36,8 +36,10 @@
                 <textarea class="form-control" aria-label="With textarea"></textarea>
               </div>
 
-              <div class="text-center">
-                  <button class="btn btn-primary">{{''}}</button>
+              <div class="text-center my-2">
+                  <button class="btn btn-pry">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    {{'Save'}}</button>
               </div>
 
             </form>
@@ -82,13 +84,16 @@
             <div class="detail-part">
               <div id="accordion">
                 <div class="card">
-                  <div class="card-header no-bb p-0" id="headingOne">
+                  <div class="card-header no-bb p-0 flex-c" id="headingOne">
                     <h5 class="mb-0">
                       <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                         aria-controls="collapseOne">
                         {{'Tasks Progress'}}
                       </button>
                     </h5>
+                    <button class="btn">
+                        <i class="fal fa-chevron-circle-down"></i>
+                    </button>
                   </div>
 
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">

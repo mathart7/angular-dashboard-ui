@@ -66,6 +66,11 @@
   width: 85%
 }
 
+.btn-pry {
+  background-color: #3171b7;
+  color: #fff;
+}
+
 .fa-file-alt {
   color: rgb(102, 99, 99);
 }
@@ -182,4 +187,9 @@
   position: absolute;
   top: 0;
   right: 3%;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: space-between;
 }
