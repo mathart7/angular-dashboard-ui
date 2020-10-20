@@ -159,11 +159,13 @@ input[type=text]:focus {
 .progression {
   width: 100%;
   height: 320px;
+  margin: 10px;
 }
 
 .progression::before {
   content: '';
-  width: 4px;
-  height: 300px;
+  width: 5px;
+  height: 310px;
+  position: absolute;
   background-color: rgb(117, 116, 116);
 }
