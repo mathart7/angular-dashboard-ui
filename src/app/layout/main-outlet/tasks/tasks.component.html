@@ -49,10 +49,10 @@
         <div class="row my-2">
           <div class="col-md-12">
             <perfect-scrollbar style="width: 100%;  height: 255px; padding-right: 10px;">
-              <div class="card mb-2 cursor" [class.card-active]="selectedIndex === i" *ngFor="let item of tasks; let i = index" (click)="selectedIndex = i">
+              <div class="card mb-2 cursor" [class.card-active]="selectedIndex === i" *ngFor="let item of tasks; let i = index" (click)="selection(i, item?.title)">
                 <div class="card-body p-2 flexible">
                   <div class="left">
-                    <small class="title-color">{{'Tasks charge for web apps tests'}}</small>
+                    <small class="title-color">{{item?.title}}</small>
                   </div>
                   <div class="right">
                     <i class="fal fa-file-alt"></i>
@@ -71,7 +71,7 @@
     <div class="card card-h">
       <div class="card-header flexible p-1">
         <div class="title-container ml-3">
-          <h6 class="mb-0 mg">{{'Tasks charge for web apps tests'}}</h6>
+          <h6 class="mb-0 mg">{{taskTitle}}</h6>
         </div>
         <div class="status-container">
           <div class="shape-circle">

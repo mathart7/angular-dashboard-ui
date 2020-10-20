@@ -90,11 +90,17 @@ export class TasksComponent implements OnInit {
   ];
 
   selectedIndex = 0;
+  taskTitle = '#Task_number_1';
 
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selection(i: any, title: any) {
+    this.selectedIndex = i;
+    this.taskTitle = title;
   }
 
 }
