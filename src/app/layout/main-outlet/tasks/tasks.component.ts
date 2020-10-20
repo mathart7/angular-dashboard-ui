@@ -1,9 +1,35 @@
+import { trigger, transition, query, style, stagger, animate, keyframes } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  styleUrls: ['./tasks.component.css'],
+  animations: [
+    trigger('itemType', [
+      // Transition from any state to any state
+      transition('* => *', [
+        // Initially the all cards are not visible
+        query(':enter', style({ opacity: 0 }), { optional: true }),
+
+        // Each card will appear sequentially with the delay of 300ms
+        query(':enter', stagger('300ms', [
+          animate('.5s ease-in', keyframes([
+            style({ opacity: 0, transform: 'translateY(-50%)', offset: 0 }),
+            style({ opacity: .5, transform: 'translateY(-10px) scale(1.1)', offset: 0.3 }),
+            style({ opacity: 1, transform: 'translateY(0)', offset: 1 }),
+          ]))]), { optional: true }),
+
+        // Cards will disappear sequentially with the delay of 300ms
+        query(':leave', stagger('300ms', [
+          animate('500ms ease-out', keyframes([
+            style({ opacity: 1, transform: 'scale(1.1)', offset: 0 }),
+            style({ opacity: .5, transform: 'scale(.5)', offset: 0.3 }),
+            style({ opacity: 0, transform: 'scale(0)', offset: 1 }),
+          ]))]), { optional: true })
+      ]),
+  ])
+  ]
 })
 export class TasksComponent implements OnInit {
 
@@ -32,51 +58,6 @@ export class TasksComponent implements OnInit {
       name: 'Josie Mullen',
       avatar: 'https://gravatar.com/avatar/a5b8a25ece063e93b1e0f1ce6db75094?s=400&d=robohash&r=x',
       grade: 'Codeur'
-    },
-    {
-      name: 'Rosa Richards',
-      avatar: 'https://gravatar.com/avatar/8080b11e18f130aa523df28d55a648eb?s=400&d=robohash&r=x',
-      grade: 'Codeur'
-    },
-    {
-      name: 'Dyer Roy',
-      avatar: 'https://gravatar.com/avatar/59546b956cd1fcc1e55cb891e3cd3775?s=400&d=robohash&r=x',
-      grade: 'Analyste'
-    },
-  ];
-
-  teams = [
-    {
-      name: 'team_project_1',
-      members: [
-        {
-          name: 'A R kuete',
-          avatar: 'https://gravatar.com/avatar/61f49a88d728ed09dc65432a651321bb?s=400&d=robohash&r=x',
-          grade: 'Chef de Projet'
-        },
-        {
-          name: 'Poole Walters',
-          avatar: 'https://gravatar.com/avatar/a02302b277f6aebff4402f9a3e838c5e?s=400&d=robohash&r=x',
-          grade: 'UI/UX Designer'
-        },
-        {
-          name: 'Josie Mullen',
-          avatar: 'https://gravatar.com/avatar/a5b8a25ece063e93b1e0f1ce6db75094?s=400&d=robohash&r=x',
-          grade: 'Codeur'
-        },
-        {
-          name: 'Rosa Richards',
-          avatar: 'https://gravatar.com/avatar/8080b11e18f130aa523df28d55a648eb?s=400&d=robohash&r=x',
-          grade: 'Codeur'
-        }
-
-      ],
-      todo: {
-        name: '',
-        details: '',
-        start: '',
-        end: ''
-      }
     }
   ];
 
@@ -101,6 +82,11 @@ export class TasksComponent implements OnInit {
   selection(i: any, title: any) {
     this.selectedIndex = i;
     this.taskTitle = title;
+  }
+
+
+  delete(i: any) {
+    this.tasks.splice(i, 1);
   }
 
 }

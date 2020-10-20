@@ -3,7 +3,7 @@
     <div class="card card-h">
       <div class="card-body p-2">
 
-        <div class="row">
+        <div class="row mb-2">
           <div class="col-md-12">
             <div class="search-container">
               <i class="fal fa-search"></i>
@@ -19,7 +19,7 @@
           </div>
         </div>
 
-        <div class="row mt-2 collapse" id="addTask" aria-labelledby="heading">
+        <div class="row my-2 collapse" id="addTask" aria-labelledby="heading">
           <div class="col-md-12 text-center">
             <form>
               <div class="input-group mb-3">
@@ -46,24 +46,30 @@
           </div>
         </div>
 
-        <div class="row my-2">
+        <perfect-scrollbar style="width: 100%;  height: 255px; padding-right: 10px;">
+        <div class="row" [@itemType]="tasks.length">
           <div class="col-md-12">
-            <perfect-scrollbar style="width: 100%;  height: 255px; padding-right: 10px;">
               <div class="card mb-2 cursor" [class.card-active]="selectedIndex === i" *ngFor="let item of tasks; let i = index" (click)="selection(i, item?.title)">
                 <div class="card-body p-2 flexible">
-                  <div class="left">
+                  <div class="left mt-2">
                     <small class="title-color">{{item?.title}}</small>
                   </div>
                   <div class="right">
-                    <i class="fal fa-file-alt"></i>
-                    <i class="fal fa-pen-alt"></i>
-                    <i class="fal fa-trash-alt"></i>
+                    <button class="btn">
+                      <i class="fal fa-file-alt"></i>
+                    </button>
+                    <button class="btn">
+                      <i class="fal fa-pen-alt"></i>
+                    </button>
+                    <button class="btn" (click)="delete(i)">
+                      <i class="fal fa-trash-alt"></i>
+                    </button>
                   </div>
                 </div>
               </div>
-            </perfect-scrollbar>
+            </div>
           </div>
-        </div>
+        </perfect-scrollbar>
       </div>
     </div>
   </div>
