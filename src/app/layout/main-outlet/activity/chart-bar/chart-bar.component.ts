@@ -90,9 +90,7 @@ export class ChartBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
+
   }
 
   // // events
