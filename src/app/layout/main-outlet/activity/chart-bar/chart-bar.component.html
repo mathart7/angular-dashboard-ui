@@ -9,7 +9,7 @@
         [chartType]="bubbleChartType">
       </canvas>
     </div>
-    <button class="btn" (click)="randomizeBull()">
+    <button class="btn" data-toggle="tooltip" data-placement="bottom" title="Update values" (click)="randomizeBull()">
       <i class="fas fa-sync-alt"></i>
     </button>
   </div>
@@ -19,7 +19,7 @@
         [legend]="barChartLegend" [chartType]="barChartType"
         ></canvas>
       </div>
-      <button class="btn"  (click)="randomizeBar()"><i class="fas fa-sync-alt"></i></button>
+      <button class="btn"  data-toggle="tooltip" data-placement="bottom" title="Update values" (click)="randomizeBar()"><i class="fas fa-sync-alt"></i></button>
   </div>
 </div>
 

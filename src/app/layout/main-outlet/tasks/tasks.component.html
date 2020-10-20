@@ -37,9 +37,14 @@
               </div>
 
               <div class="text-center my-2">
-                  <button class="btn btn-pry" [disabled]="taskForm.invalid" (click)="add()">
+                  <button  *ngIf="btnState === false" class="btn btn-pry" [disabled]="taskForm.invalid" (click)="add()">
                     <i *ngIf="spin === true" class="fas fa-spinner fa-spin"></i>
                     {{'Save'}}</button>
+
+                    <button *ngIf="btnState === true" class="btn btn-pry" [disabled]="taskForm.invalid" (click)="edit()">
+                    <i *ngIf="spin === true" class="fas fa-spinner fa-spin"></i>
+                    {{'Edit'}}</button>
+                    &nbsp;<button class="btn"><i class="fal fa-times"></i></button>
               </div>
 
             </form>
@@ -59,7 +64,7 @@
                       <i class="fal fa-file-alt"></i>
                     </button>
                     <button class="btn">
-                      <i class="fal fa-pen-alt"></i>
+                      <i class="fal fa-pen-alt" (click)="getItem(item,i)"></i>
                     </button>
                     <button class="btn" (click)="delete(i)">
                       <i class="fal fa-trash-alt"></i>

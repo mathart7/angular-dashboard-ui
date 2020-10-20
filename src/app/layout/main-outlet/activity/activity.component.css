@@ -92,3 +92,19 @@
   -webkit-animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both;
   animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
 }
+
+.btn-wave {
+  width: 40%;
+  height: 50px;
+  background-color: #ffff;
+  color: #3171b7;
+  border: 3px solid #3171b7;
+  border-radius: .45rem;
+}
+
+
+.btn-wave:hover {
+  background-color: #3171b7;
+  color: #ffff;
+  transition: all .5s ease-in-out;
+}

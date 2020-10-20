@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
+declare var $: any;
+
 @Component({
   selector: 'app-chart-bar',
   templateUrl: './chart-bar.component.html',
@@ -88,6 +90,9 @@ export class ChartBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   }
 
   // // events

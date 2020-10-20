@@ -2,6 +2,8 @@ import { trigger, transition, query, style, stagger, animate, keyframes } from '
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
+declare var $: any;
+
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -76,6 +78,8 @@ export class TasksComponent implements OnInit {
 
   taskForm: FormGroup;
   spin = false;
+  indx: number;
+  btnState = false;
 
 
   constructor() { }
@@ -96,16 +100,38 @@ export class TasksComponent implements OnInit {
     this.taskTitle = title;
   }
 
+  getItem(item: any, i: any) {
+
+    $('#addTask').collapse({
+      toggle: true
+    });
+    this.btnState = true;
+    this.indx = i;
+    this.taskForm = new FormGroup({
+        title: new FormControl(item?.title, Validators.required),
+        description: new FormControl(item?.description, Validators.required)
+      });
+  }
+
   delete(i: any) {
     this.tasks.splice(i, 1);
   }
 
   add() {
-    const form = this.taskForm.value;
     this.spin = true;
+    const form = this.taskForm.value;
+    this.tasks.unshift({title: form.title, description: form.description});
     setTimeout(() => {
       this.spin = false;
-      this.tasks.push({title: form.title, description: form.description});
+    }, 3000);
+  }
+
+  edit() {
+    this.spin = true;
+    const form = this.taskForm.value;
+    this.tasks.splice(this.indx, 0, {title: form.title, description: form.description});
+    setTimeout(() => {
+      this.spin = false;
     }, 3000);
   }
 
