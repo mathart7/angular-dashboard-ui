@@ -50,7 +50,7 @@
   color: #ccc;
 }
 
-input[type=text] {
+.search-container input[type=text] {
   width: 30px;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -62,8 +62,8 @@ input[type=text] {
   transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:focus {
-  width: 100%;
+.search-container input[type=text]:focus {
+  width: 85%
 }
 
 .fa-file-alt {
@@ -72,6 +72,14 @@ input[type=text]:focus {
 
 .fa-pen-alt {
   color: #3171b7;
+}
+
+.btn-add-task {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 40px;
+  border-radius: .25rem;
 }
 
 .card-header {
@@ -138,7 +146,7 @@ input[type=text]:focus {
   background-color: #3ac47d !important;
 }
 
-.user-progress{
+.user-progress {
   width: 30%;
 }
 
@@ -153,7 +161,7 @@ input[type=text]:focus {
 }
 
 .shadow {
-  box-shadow: 1px 2px 3px 1px rgba(0,0,0,.15)!important;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, .15) !important;
 }
 
 .progression {
@@ -168,4 +176,10 @@ input[type=text]:focus {
   height: 310px;
   position: absolute;
   background-color: rgb(117, 116, 116);
+}
+
+.add_task {
+  position: absolute;
+  top: 0;
+  right: 3%;
 }
