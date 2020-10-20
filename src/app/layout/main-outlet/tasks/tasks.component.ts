@@ -1,5 +1,6 @@
 import { trigger, transition, query, style, stagger, animate, keyframes } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-tasks',
@@ -73,10 +74,20 @@ export class TasksComponent implements OnInit {
   selectedIndex = 0;
   taskTitle = '#Task_number_1';
 
+  taskForm: FormGroup;
+
 
   constructor() { }
 
   ngOnInit(): void {
+    this.initForm();
+  }
+
+  initForm() {
+    this.taskForm = new FormGroup({
+      title: new FormControl('', Validators.required),
+      description: new FormControl('', Validators.required)
+    });
   }
 
   selection(i: any, title: any) {
@@ -84,9 +95,12 @@ export class TasksComponent implements OnInit {
     this.taskTitle = title;
   }
 
-
   delete(i: any) {
     this.tasks.splice(i, 1);
+  }
+
+  add() {
+
   }
 
 }
