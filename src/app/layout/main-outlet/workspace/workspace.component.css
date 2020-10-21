@@ -36,3 +36,14 @@
   background-color: rgb(158, 34, 34);
   color: #fff;
 }
+
+.item {
+  position: relative;
+}
+
+.item span {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(48, 42, 42);
+}
