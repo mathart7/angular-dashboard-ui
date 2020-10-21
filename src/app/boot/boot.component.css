@@ -1,13 +1,15 @@
-.center_xy_logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 300px;
-  height: 150px;
+.logo {
+  font-weight: bold;
 }
+
+.center_xy_logo {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .progress {
   background: #fff;
   justify-content: flex-start;
@@ -17,7 +19,7 @@
   padding: 0 5px;
   display: flex;
   height: 8px;
-  width: 350px;
+  width: 315px;
 }
 
 .progress-value {

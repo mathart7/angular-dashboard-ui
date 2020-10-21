@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
     setTimeout(() => {
       this.boot = true;
-      this.router.navigate(['/acceuil']);
+      this.router.navigate(['/workspace']);
     }, 2500);
   }
 }
