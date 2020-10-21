@@ -43,6 +43,8 @@
 
 .item span {
   position: absolute;
+  top: 10%;
+  right: 55%;
   font-size: 25px;
   font-weight: bold;
   color: rgb(48, 42, 42);
