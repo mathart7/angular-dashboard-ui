@@ -24,14 +24,14 @@
             <form [formGroup]="taskForm">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">{{'Title'}}</span>
+                  <span class="input-group-text" id="inputGroup-sizing-default"><small>{{'Title'}}</small></span>
                 </div>
                 <input type="text" formControlName="title"  class="form-control" aria-label="Default"
                   aria-describedby="inputGroup-sizing-default">
               </div>
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">{{'Task\'s description'}}</span>
+                  <span class="input-group-text"> <small>{{'Task\'s description'}}</small></span>
                 </div>
                 <textarea  formControlName="description" class="form-control" aria-label="With textarea"></textarea>
               </div>
@@ -39,11 +39,10 @@
               <div class="text-center my-2">
                   <button  *ngIf="btnState === false" class="btn btn-pry" [disabled]="taskForm.invalid" (click)="add()">
                     <i *ngIf="spin === true" class="fas fa-spinner fa-spin"></i>
-                    {{'Save'}}</button>
-
+                   <small>{{'Save'}}</small></button>
                     <button *ngIf="btnState === true" class="btn btn-pry" [disabled]="taskForm.invalid" (click)="edit()">
                     <i *ngIf="spin === true" class="fas fa-spinner fa-spin"></i>
-                    {{'Edit'}}</button>
+                    <small>{{'Edit'}}</small></button>
                     &nbsp;<button class="btn"><i class="fal fa-times"></i></button>
               </div>
 
@@ -99,7 +98,7 @@
                     <h5 class="mb-0">
                       <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                         aria-controls="collapseOne">
-                        {{'Tasks Progress'}}
+                        <small class="text-muted">{{'Tasks Progress'}}</small>
                       </button>
                     </h5>
                     <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
@@ -111,7 +110,7 @@
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body p-2">
                       <div class="progression">
-                        <div>
+                        <div class="item-line">
                           <span></span>
                           <div></div>
                         </div>
