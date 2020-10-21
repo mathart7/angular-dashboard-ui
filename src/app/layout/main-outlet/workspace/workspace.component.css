@@ -49,3 +49,7 @@
   font-weight: bold;
   color: rgb(48, 42, 42);
 }
+
+.col-md-4 small {
+  margin-left: 50px;
+}
