@@ -18,6 +18,7 @@ import { TasksComponent } from './layout/main-outlet/tasks/tasks.component';
 import { ChartsModule } from 'ng2-charts';
 import { ChartBarComponent } from './layout/main-outlet/activity/chart-bar/chart-bar.component';
 import { ChartPieComponent } from './layout/main-outlet/activity/chart-pie/chart-pie.component';
+import { BootComponent } from './boot/boot.component';
 
 
 
@@ -35,7 +36,8 @@ import { ChartPieComponent } from './layout/main-outlet/activity/chart-pie/chart
     SettingsComponent,
     TasksComponent,
     ChartBarComponent,
-    ChartPieComponent
+    ChartPieComponent,
+    BootComponent
   ],
   imports: [
     BrowserModule,

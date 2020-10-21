@@ -15,9 +15,11 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+
     $(() => {
       $('[data-toggle="tooltip"]').tooltip();
     });
+
     setTimeout(() => {
       this.boot = true;
       this.router.navigate(['/acceuil']);
