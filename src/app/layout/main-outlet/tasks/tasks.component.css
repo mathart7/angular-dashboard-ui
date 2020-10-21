@@ -177,7 +177,7 @@
 .progression::before {
   content: '';
   width: 5px;
-  height: 70px;
+  height: 100px;
   position: absolute;
   background-color: rgb(117, 116, 116);
 }
@@ -202,12 +202,16 @@
   transform: rotate(-180deg);
 }
 .item-line {
+  position: relative;
+}
+
+.item-line span{
   height: 14px;
   width: 14px;
-  background: #e9ecef;
+  background:  rgb(117, 116, 116);
   position: absolute;
-  left: 6px;
-  top: 2px;
+  left: -0.8%;
+  top: 10px;
   display: block;
   border-radius: 20px;
 }
